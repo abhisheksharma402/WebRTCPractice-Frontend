@@ -18,7 +18,7 @@ const VideoCallPatient = () => {
 
   useEffect(() => {
 
-    let conn = new WebSocket("ws://localhost:9190/socket");
+    let conn = new WebSocket("ws://18ed-103-156-19-229.ngrok-free.app/socket");
     console.log(conn);
 
 

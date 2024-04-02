@@ -13,7 +13,7 @@ const DoctorDashboard = () => {
   const [appointments, setAppointments] = useState([]);
 
   const getAppointments = () => {
-    axios.get("http://localhost:9190/doctor/appointments", { params: { doctorId: doctorId } })
+    axios.get("https://18ed-103-156-19-229.ngrok-free.app/doctor/appointments", { params: { doctorId: doctorId } })
       .then((res) => {
         console.log(res.data);
         setAppointments(res.data);
@@ -30,7 +30,7 @@ const DoctorDashboard = () => {
   useEffect(() => {
     setTimeout(getAppointments, 2000);
 
-    let conn = new WebSocket("ws://localhost:9190/socket");
+    let conn = new WebSocket("ws://18ed-103-156-19-229.ngrok-free.app/socket");
     console.log(conn);
 
     var configuration = {
