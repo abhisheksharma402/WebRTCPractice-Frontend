@@ -20,7 +20,7 @@ const Login = () => {
 
     if (userType == "patient") {
 
-      axios.post('https://9372-103-156-19-229.ngrok-free.app/patient/login', { email, password, userType })
+      axios.post('https://8059-103-156-19-229.ngrok-free.app/patient/login', { email, password, userType })
         .then((res) => {
           console.log(res);
           localStorage.setItem("user", JSON.stringify(res.data));
@@ -35,7 +35,7 @@ const Login = () => {
         });
     }
     else{
-      axios.post('https://9372-103-156-19-229.ngrok-free.app/doctor/login', { email, password, userType })
+      axios.post('https://8059-103-156-19-229.ngrok-free.app/doctor/login', { email, password, userType })
         .then((res) => {
           console.log(res);
           localStorage.setItem("user", JSON.stringify(res.data));

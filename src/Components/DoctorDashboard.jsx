@@ -30,7 +30,7 @@ const DoctorDashboard = () => {
   useEffect(() => {
     setTimeout(getAppointments, 2000);
 
-    let conn = new WebSocket("ws://18ed-103-156-19-229.ngrok-free.app/socket");
+    let conn = new WebSocket("ws://8059-103-156-19-229.ngrok-free.app/socket");
     console.log(conn);
 
     var configuration = {

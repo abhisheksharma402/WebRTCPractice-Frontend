@@ -11,7 +11,7 @@ const PatientDashboard = () => {
      const patientid = user.id;
 
      useEffect(() => {
-          axios.get("https://9372-103-156-19-229.ngrok-free.app/patient/doctors")
+          axios.get("https://8059-103-156-19-229.ngrok-free.app/patient/doctors")
                .then((res) => {
                     console.log(res);
                     setData(res.data);
@@ -24,7 +24,7 @@ const PatientDashboard = () => {
           // console.log("userid: ",user.id);
           // console.log("doctorid: ",doctorid);
 
-          axios.post("https://9372-103-156-19-229.ngrok-free.app/appointment/makeAppointment",
+          axios.post("https://8059-103-156-19-229.ngrok-free.app/appointment/makeAppointment",
                {
                     "roomId": roomID,
                     "doctor": {
